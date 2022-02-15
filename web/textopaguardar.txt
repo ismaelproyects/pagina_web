@@ -1,0 +1,19 @@
+  <div class="extra_Izq_Contenido">
+                            <div class="extra_Izq_price">- 45% <span>extra</span></div>
+                            <div class="extra_Izq_title">En todos los abrigos</div>
+                            <div class="extra_Izq_text">* Los abrigos superiores a 450 € solo tendran un descuento del 20%</div>
+                            <div class="boton_extra"><a href="#">Comprar</a></div>
+                        </div>   
+
+
+
+ <div class="extra_Der_Contenido">
+                        <div class="Outfit_Title">
+                            <div class="Letra_EnMedio">&</div>
+                            <div class="Outfit_Top">Outfits</div>
+                            <div class="Outfit_Bottom">Completos</div>
+                        </div>
+                        <div class="extra_Der_text">* Los abrigos superiores a 450 € solo tendran un descuento del 20%</div>
+                        <div class="boton_extra"><a href="#">Comprar</a></div>
+
+                    </div>

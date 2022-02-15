@@ -311,7 +311,6 @@ div
 	background: #937c6f;
 	vertical-align: middle;
 	margin-right: 4px;
-	transition: all 200ms ease;
 }
 
 .producto_buy img{
@@ -328,13 +327,12 @@ div
 .extraOutfit{
 	margin-top: 60px ;
 	width: 100%;
-	padding-left: 62px;
-	padding-right: 62px;
+
 }
 
 .extraPromo{
+	width: calc((100% - 90px) / 2);
 	float: left;
-	width: 100%;
 }
 
 .extraPromoIzq{
@@ -343,10 +341,10 @@ div
 	padding-left: 45px;
 	padding-bottom: 46px;
 	padding-right: 45px;
+	margin-left: 30px;
 }
 
 .OutfitCompletoDer{
-	border: solid 2px #937c6f;
 	padding-top: 43px;
 	padding-bottom: 46px;
 }
@@ -360,13 +358,10 @@ div
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 }
 
 .extra_Prom_Img img{
-	width: 50%;
+	width: 100%;
 }
 
 .extra_Izq_Contenido{
@@ -439,7 +434,6 @@ div
 /*OUTFITT DERECHAAA*/
 
 .extra_Der_Contenido{
-	height: 100%;
 	background: transparent;
 	padding-top: 27px;
 	padding-left: 37px;
@@ -489,7 +483,48 @@ div
 	margin-bottom: 50px;
 }
 
-/*DE TODO UN POCO*/
+
+/*SLIDERRRR*/
+
+.slider{
+	margin-top: 50px;
+	width: 100%;
+	padding-top: 88px;
+	padding-left: 44px;
+	padding-right: 44px;
+	padding-bottom: 42px;
+	margin-top: 99px;
+}
+
+.Fondo_Img_Slider{
+	background-image: url(../img/galeria/gallery.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.Centrado_Txt p{
+	text-align: center;
+	color: white;
+	font-size: 35px;
+}
+
+#Txt_Insta{
+	color: rgb(207, 207, 202);
+	font-size: 13px;
+}
+
+.galeria_carrusel{
+	margin-top: 50px;
+}
+
+
+/*CLEARFIX*/
+
 
 .clearfix::before, .clearfix::after
 {
@@ -504,6 +539,7 @@ div
 {
 	zoom: 1;
 }
+
 /*RESPONSIVEEE*/
 
 @media (max-width: 650px) {
@@ -517,6 +553,11 @@ div
 	}
 	.Subtitulo_Promo{
 		font-size: 20px;
+	}
+	.slider
+	{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
   }
 
