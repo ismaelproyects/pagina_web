@@ -486,7 +486,7 @@ div
 
 /*SLIDERRRR*/
 
-.slider{
+.sliderContainer{
 	margin-top: 50px;
 	width: 100%;
 	padding-top: 88px;
@@ -518,10 +518,17 @@ div
 	font-size: 13px;
 }
 
-.galeria_carrusel{
-	margin-top: 50px;
+/*Imagenes de insta*/
+.grid4{
+	display: grid; 
+	grid-template-columns: repeat(4,1fr); 
+	grid-gap: 20px;
+	padding-top: 20px ;
 }
 
+.grid4 img{
+	width: 90%;
+}
 
 /*CLEARFIX*/
 
@@ -543,6 +550,9 @@ div
 /*RESPONSIVEEE*/
 
 @media (max-width: 650px) {
+	.main{
+		text-align: center;
+	}
 	.menu {
 	  display: block;
 	}
@@ -559,10 +569,16 @@ div
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.grid4{
+		grid-template-columns: repeat(2,1fr); 
+	}
   }
 
 
   @media (max-width: 1250px) {
+	.main{
+		text-align: center;
+	}
 	.menu {
 	  display: block;
 	}
