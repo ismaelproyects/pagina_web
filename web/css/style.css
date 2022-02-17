@@ -548,8 +548,32 @@ div
 }
 
 /*RESPONSIVEEE*/
+@media (max-width: 450px) {
+	.main{
+		text-align: center;
+	}
+	.menu {
+	  display: block;
+	}
 
-@media (max-width: 650px) {
+	.productosPromoList{
+		display: block;
+		width: 100%;
+	}
+	.Subtitulo_Promo{
+		font-size: 20px;
+	}
+	.slider
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.grid4{
+		grid-template-columns: repeat(2,1fr); 
+	}
+  }
+
+@media (max-width: 750px) {
 	.main{
 		text-align: center;
 	}
