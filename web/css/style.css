@@ -571,6 +571,12 @@ div
 	.grid4{
 		grid-template-columns: repeat(2,1fr); 
 	}
+	.extraPromo{
+		float: none;
+	}
+	.extra_Izq_price{
+		font-size: 20px;
+	}
   }
 
 @media (max-width: 750px) {
@@ -596,6 +602,9 @@ div
 	.grid4{
 		grid-template-columns: repeat(2,1fr); 
 	}
+	.extraPromo{
+		float: none;
+	}
   }
 
 
@@ -609,10 +618,13 @@ div
 
 	.productosPromoList{
 		display: block;
-		width: 50%;
+		width: 40%;
 	}
 
 	.Subtitulo_Promo{
 		font-size: 20px;
+	}
+	.extraPromo{
+		float: none;
 	}
   }
