@@ -2,6 +2,7 @@
     margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*HEADER*/
@@ -537,6 +538,7 @@ div
 	height: 400px;
 	margin: auto;
 	overflow: hidden;
+	margin-top: 20px;
 }
 
 .slider-testimonio{
@@ -545,6 +547,7 @@ div
 	 width: 100%;
 	 align-items: center;
 }
+
 
 .slider-test{
 	width: 100%;
@@ -562,7 +565,101 @@ div
 	object-fit: cover;
 	border-radius: 100%;
 	margin-top: 15px;
+	margin-top: 30px;
 }
+
+/*FOOTEER*/
+
+
+footer{
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+/*//////////////////////////////////////////////////*/
+/*CONTACTO*/
+
+.formulario_Contacto{
+	width: 100%;
+	padding-top: 99px;
+	padding-bottom: 97px;
+}
+
+.formulario_Contacto p{
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 50px;
+	text-align: center;
+	color: rgb(218, 151, 51);
+	text-transform: uppercase;
+}
+
+.formulario_contenido_General{
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.formulario_E {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.formulario_Contenido{
+	display:flex!important;
+	flex-direction:row!important;
+	-ms-flex-pack:justify!important;justify-content:space-between!important;
+}
+
+.formulario{
+	display: block;
+    width: calc((100% - 60px) / 3);
+    height: 53px;
+    border: solid 1px #b5b5b5;
+    outline: none;
+    padding-left: 22px;
+}
+
+.formulario_text{
+	width: 100%;
+    height: 53px;
+    border: solid 1px #b5b5b5;
+    outline: none;
+    padding-left: 22px;
+    margin-top: 27px;
+    height: 234px;
+    padding-top: 20px;
+}
+
+.formulario::-webkit-input-placeholder,.formulario_text,
+.review_form_text{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #8c8c8c !important;
+	
+}
+
+.formulario_boton{
+	width: 179px;
+	height: 46px;
+	border: none;
+	outline: none;
+	background: #937c6f;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+	margin-top: 18px;
+	transition: all 200ms ease;
+}
+.formulario_boton:hover{
+	background: #e0e3e4;
+	color: #232323;
+}
+
 /*CLEARFIX*/
 
 
@@ -635,9 +732,6 @@ div
 	.grid4{
 		grid-template-columns: repeat(2,1fr); 
 	}
-	.extraPromo{
-		float: none;
-	}
   }
 
 
@@ -657,7 +751,5 @@ div
 	.Subtitulo_Promo{
 		font-size: 20px;
 	}
-	.extraPromo{
-		float: none;
-	}
+	
   }

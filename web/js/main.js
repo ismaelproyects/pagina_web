@@ -1,7 +1,6 @@
 let slider = document.querySelector('.slider-testimonio');
-let sliderInd = document.querySelector('.slider-test');
+let sliderInd = document.querySelectorAll('.slider-test');
 let contador = 1;
-
 let tamañoWidth = sliderInd[0].clientWidth;
 let intervalo = 3000;
 
@@ -17,10 +16,11 @@ setInterval(function tiempo(){
 function slides(){
     slider.style.transform = 'translate('+(-tamañoWidth * contador) + 'px';
     slider.style.transition = 'transform 1s';
-
     contador ++;
+    console.log(contador);
+    console.log(sliderInd.length);
 
-    if(contador === sliderInd.lenght){
+    if(contador === sliderInd.length){
         contador = 0;
         setTimeout(function(){
             slider.style.transform = 'translate(0px)';
