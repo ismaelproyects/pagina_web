@@ -27,4 +27,5 @@ function slides(){
             slider.style.transition = 'transform 0s';
         }, intervalo);
     }
-}   
+} ;
+

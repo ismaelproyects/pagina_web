@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>YRFeet</title>
+</head>
+<body>
+
+
+    <!--HEADERRR-->
+    <header>
+            <nav>
+            <a href="./index.html">Home</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./producto.html">Producto</a>
+            <a href="./quienes.html">Quienes Somos</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./login.html">Login</a>
+
+        </nav>
+
+            <!--Menu hamburguesa-->
+
+            <input type="checkbox" id="check"> <!-- este es el check que va a determinar si se muestra o no el menú desde el lateral, si está checkeado lo mostrará, si no, lo oculta CON LA PSEUDOCLASE :CHECKED ver css-->
+
+        <label for="check" class="menuMostrar-toggle">
+            &#8801
+        </label>
+        <nav class="menu">
+                <ul class="acordeon-vertical">
+  					<li id="opcion1"><a href="./index.html">Home</a></li>
+ 					<li id="opcion2"><a href="./productos.html">Productos</a></li>
+					<li id="opcion3"><a href="./producto.html">Producto</a></li>
+                    <li id="opcion4"><a href="./quienes.html">Quienes Somos</a></li>
+					<li id="opcion5"><a href="./contacto.html">Contacto</a></li>
+                    <li id="opcion6"><a href="./login.html">Login</a></li>
+
+
+                </ul>
+                <label for="check" class="menuOcultar-toggle">&#215</label>
+			
+			<!-- Al tener los dos labels el mismo for todos actuan sobre el input check -->
+			
+            </nav>
+    </header>
+    <main>
+
+<div class="container_L">
+    <div class="page">
+        <div class="container_Login">
+          <div class="izquierda">
+            <div class="login_Txt">Login</div>
+            <div class="aviso">
+                Al registrarte aceptas tener en tu poder un T-Rex
+            </div>
+          </div>
+          <div class="derecha">
+        
+            <div class="form">
+              <label for="email">Email</label>
+              <input type="email" id="email">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password">
+              <input type="submit" id="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+       
+          
+             
+               
+    
+
+    </main>
+</body>
+</html>

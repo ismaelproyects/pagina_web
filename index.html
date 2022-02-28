@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diseño menu móvil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+        <input type="checkbox" id="check"> <!-- este es el check que va a determinar si se muestra o no el menú desde el lateral, si está checkeado lo mostrará, si no, lo oculta CON LA PSEUDOCLASE :CHECKED ver css-->
+
+        <label for="check" class="menuMostrar-toggle">
+            &#8801
+        </label>
+        <nav class="menu">
+                <ul class="acordeon-vertical">
+  					<li id="opcion1"><a href="#opcion1">OPCIÓN 1</a>
+   	
+  					</li>
+ 					<li id="opcion2"><a href="#opcion2">OPCIÓN 2</a>
+   			
+  					</li>
+					<li id="opcion3"><a href="#opcion3">OPCIÓN 3</a></li>
+				</ul>
+                <label for="check" class="menuOcultar-toggle">&#215</label>
+			
+			<!-- Al tener los dos labels el mismo for todos actuan sobre el input check -->
+			
+            </nav>
+    </header> 
+</body>
+</html>

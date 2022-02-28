@@ -14,25 +14,46 @@
 
     <!--HEADERRR-->
     <header>
-        <div class="contenedor_header">
-			<div class="logo"><a href="#">YRFeet</a></div>
-			<nav class="menu">
-				    <a href="#">Home</a>
-					<a href="categories.html">Jordan</a>
-					<a href="categories.html">Adidas</a>
-					<a href="categories.html">Nike</a>
-					<a href="contacto.html">Contacto</a>
-			</nav>
 
-        
-		</div>
+    
+            <nav>
+            <a href="./index.html">Home</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./producto.html">Producto</a>
+            <a href="./quienes.html">Quienes Somos</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./login.html">Login</a>
+
+            </nav>
+       
+            <!--Menu hamburguesa-->
+
+         <input type="checkbox" id="check"> <!-- este es el check que va a determinar si se muestra o no el menú desde el lateral, si está checkeado lo mostrará, si no, lo oculta CON LA PSEUDOCLASE :CHECKED ver css-->
+
+        <label for="check" class="menuMostrar-toggle">
+            &#8801
+        </label>
+        <nav class="menu">
+                <ul class="acordeon-vertical">
+  					<li id="opcion1"><a href="./index.html">Home</a></li>
+ 					<li id="opcion2"><a href="./productos.html">Productos</a></li>
+					<li id="opcion3"><a href="./producto.html">Producto</a></li>
+                    <li id="opcion4"><a href="./quienes.html">Quienes Somos</a></li>
+					<li id="opcion5"><a href="./contacto.html">Contacto</a></li>
+                    <li id="opcion6"><a href="./login.html">Login</a></li>
+                </ul>
+                <label for="check" class="menuOcultar-toggle">&#215</label>
+			
+			<!-- Al tener los dos labels el mismo for todos actuan sobre el input check -->
+			
+            </nav>
     </header>
     <main>
 
         <!--IMAGEN DE LA CABECERA-->
 
         <div class="imagen_cabecera">
-            <img src="img/fondo.jpg">
+            <img src="img/fondo.png">
         </div>
 
        <!-- Promo de productos -->
@@ -55,7 +76,7 @@
                     <img src="img/promo_2.jpg">
                     <div class="P_Medio contentP">
                      <div class="titulo_Promo_centrado ">-30%</div>
-                    <div class="Subtitulo_Promo_centradoS">En carteras</div>
+                    <div class="Subtitulo_Promo_centradoS">En accesorios</div>
                     </div>
 
                <div class="Compra_Abajo"><a href="#">Comprar</a></div>
@@ -65,7 +86,7 @@
                     <img src="img/promo_2.jpg">
                     <div class="contentP contentPIzquierda">
                         <div class="titulo_Promo_izquierda">-25%</div>
-                        <div class="Subtitulo_Promo_izquierda">En bufandas</div>
+                        <div class="Subtitulo_Promo_izquierda">En llaveros</div>
                     </div>
                     <div class="Compra_Abajo"><a href="#">Comprar</a></div>
 
@@ -98,7 +119,7 @@
                             <div class="producto_price">45.00 €</div>
                         </div>
                         <div class="product_options">
-                            <div class="producto_buy producto_option"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                            <div class="producto_buy"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +142,7 @@
                             <div class="producto_price">45.00 €</div>
                         </div>
                         <div class="product_options">
-                            <div class="producto_buy producto_option"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                            <div class="producto_buy"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -141,7 +162,7 @@
                             <div class="producto_price">45.00 €</div>
                         </div>
                         <div class="product_options">
-                            <div class="producto_buy producto_option"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                            <div class="producto_buy"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
                         </div>
                     </div>
                   </div>
@@ -150,78 +171,73 @@
 
              <!-- Extra  y Outfits Completos-->
 
-            <div class="extraOutfit clearfix">
+          
+
+            <!-- GALERIA -->
+            
+                <div class="sliderContainer">
+                    <div class="Fondo_Img_Slider"></div>
+                        <div class="Centrado_Txt">
+                            <p>#StreetWear</p>
+                            <p>#Street</p>
+                    <br>    
+                            <p id="Txt_Insta">*Si subes una foto a tu Instagram con estos hastags tendras un 10% de descuento</p>
+                        </div>
+        
+                    <!--Imagenes de Insta-->
+                        <div class="grid4">
+                            <img src="./img/galeria/fotoGaleria.jpg" alt="">
+                            <img src="./img/galeria/fotoGaleria.jpg" alt="">
+                            <img src="./img/galeria/fotoGaleria.jpg" alt="">
+                            <img src="./img/galeria/fotoGaleria.jpg" alt="">
+                        </div>
+        
+                 </div>
+       
+
+                 <div class="tituloPromo">Nuestras instalaciones</div>
+
+            <div class="extraOutfit">
 
                 <div class="extraPromo extraPromoIzq">
-                    <div class="extra_Prom_Img"> <img src="img/extra_1.jpg" alt="img extra descuento"> </div>
-                    <div class="extra_Izq_Contenido">
-                        <div class="extra_Izq_price">- 45% <span>extra</span></div>
-                        <div class="extra_Izq_title">En todos los abrigos</div>
-                        <div class="extra_Izq_text">* Los abrigos superiores a 450 € solo tendran un descuento del 20%</div>
-                        <div class="boton_extra"><a href="#">Comprar</a></div>
-                    </div>  
+                    <div class="extra_Prom_Img"> <img src="img/tienda.png" alt="img extra descuento"> </div>
+                    
                 </div>
 
                 <div class="extraPromo OutfitCompletoDer">
-                    <div class="extra_Prom_Img"><img src="img/extra_2.jpg" alt="img Outfits completos"></div>
-                    <div class="extra_Der_Contenido">
-                        <div class="Outfit_Title">
-                            <div class="Letra_EnMedio">&</div>
-                            <div class="Outfit_Top">Outfits</div>
-                            <div class="Outfit_Bottom">Completos</div>
-                        </div>
-                        <div class="extra_Der_text">* Los abrigos superiores a 450 € solo tendran un descuento del 20%</div>
-                        <div class="boton_extra"><a href="#">Comprar</a></div>
-
-                    </div>
+                    <div class="extra_Prom_Img"><img src="img/tienda.png" alt="img Outfits completos"></div>
                 </div>
             </div>
+       
 
-
-            <!-- GALERIA -->
-        <div class="sliderContainer clearfix">
-            <div class="Fondo_Img_Slider"></div>
-                <div class="Centrado_Txt">
-                    <p>#UltimaModa</p>
-                    <p>#YRFeetTop</p>
-            <br>    
-                    <p id="Txt_Insta">*Si subes una foto a tu Instagram con estos hastags tendras un 10% de descuento</p>
-                </div>
-
-            <!--Imagenes de Insta-->
-                <div class="grid4">
-                    <img src="/img/galeria/fotoGaleria.jpg" alt="">
-                    <img src="/img/galeria/fotoGaleria.jpg" alt="">
-                    <img src="/img/galeria/fotoGaleria.jpg" alt="">
-                    <img src="/img/galeria/fotoGaleria.jpg" alt="">
-                </div>
-
-         </div>
-
+         
          <!--TESTIMONIOS-->
          
-         <div class="tituloPromo">Testimonios</div>
+         <div class="testimonios_C">
+            <div class="tituloPromo">Testimonios</div>
 
             <div class="testimonios">
                 <div class="slider-testimonio">
                     <div class="slider-test">
-                        <p>La mejor web de ropa exclusiva, lo que quieras lo encontrar aqui!!! :)</p>
+                        <p>La mejor web de ropa exclusiva, lo que quieras lo encontraras aqui!!! :)</p>
                         <img src="./img/testimonio_img.jpg" alt="Testimonio imagen">
                         <h3>Daniel</h3>
                     </div>
                     <div class="slider-test">
-                      <p>La mejor web de ropa exclusiva, lo que quieras lo encontrar aqui!!! :)</p>
+                      <p>La mejor web de ropa exclusiva, lo que quieras lo encontraras aqui!!! :)</p>
                       <img src="./img/testimonio_img.jpg" alt="Testimonio imagen">
                       <h3>Javier</h3>
                   </div>
                   <div class="slider-test">
-                      <p>La mejor web de ropa exclusiva, lo que quieras lo encontrar aqui!!! :)</p>
+                      <p>Me compre una sudadera por 500€ y mi vida no ha cambiado:)</p>
                       <img src="./img/testimonio_img.jpg" alt="Testimonio imagen">
                       <h3>Alberto</h3>
                   </div>
-                </div>
-                      
+                </div>   
             </div>
+         </div>
+         
+
 
             <footer>
                 <p>Copyright © <script>document.write(new Date().getFullYear())</script> Todos los derechos reservados a Ismael.Amoros.Solano</p>

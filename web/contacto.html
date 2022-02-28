@@ -12,31 +12,48 @@
 
     <!--HEADERRR-->
     <header>
-        <div class="contenedor_header">
-			<div class="logo"><a href="#">YRFeet</a></div>
-			<nav class="menu">
-				    <a href="index.html">Home</a>
-					<a href="categories.html">Jordan</a>
-					<a href="categories.html">Adidas</a>
-					<a href="categories.html">Nike</a>
-					<a href="contacto.html">Contacto</a>
-			</nav>
+            <nav>
+            <a href="./index.html">Home</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./producto.html">Producto</a>
+            <a href="./quienes.html">Quienes Somos</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./login.html">Login</a>
 
-        
-		</div>
+            </nav>
+
+
+<!--Menu hamburguesa-->
+            <input type="checkbox" id="check"> <!-- este es el check que va a determinar si se muestra o no el menú desde el lateral, si está checkeado lo mostrará, si no, lo oculta CON LA PSEUDOCLASE :CHECKED ver css-->
+
+        <label for="check" class="menuMostrar-toggle">
+            &#8801
+        </label>
+        <nav class="menu">
+                <ul class="acordeon-vertical">
+  					<li id="opcion1"><a href="./index.html">Home</a></li>
+ 					<li id="opcion2"><a href="./productos.html">Productos</a></li>
+					<li id="opcion3"><a href="./producto.html">Producto</a></li>
+                    <li id="opcion4"><a href="./quienes.html">Quienes Somos</a></li>
+					<li id="opcion5"><a href="./contacto.html">Contacto</a></li>
+                    <li id="opcion6"><a href="./login.html">Login</a></li>
+
+                </ul>
+                <label for="check" class="menuOcultar-toggle">&#215</label>
+			
+			<!-- Al tener los dos labels el mismo for todos actuan sobre el input check -->
+			
+            </nav>
     </header>
     <main>
 
         <!--CONTACTO-->
 
-        <div class="contact_cabecera">
-            <div class="contact_title">
-                <p>Contacto</p>
-            </div>
-        </div>
+        
 
-       
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6457.63443441793!2d1.5186368718123047!3d42.54389423361345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1645135109043!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6457.63443441793!2d1.5186368718123047!3d42.54389423361345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1645135109043!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
     
         <div class="formulario_Contacto">
                <p>
@@ -58,8 +75,78 @@
                 </form>
                </div>
         </div>
+
+
+        <!--Contacto Info-->
+
+        <div class="contact_contenedor container_Contact">
+            <div class="contact_info">
+                <div class="contact_title">
+                    Contacto Info
+                </div>
+                <div class="contact_info">
+                    <ul>
+                        <li>
+                            <div class="contact_info_Icon">
+                                <img src="./img/loguitos/contact_info_1.png" alt="">
+                            </div>
+                            <div class="contact_info_Text">
+                                Alicante,Alicante C/Ejemplo nº7 ESP
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact_info_Icon">
+                                <img src="./img/loguitos/contact_info_2.png" alt="">
+                            </div>
+                            <div class="contact_info_Text">
+                                YRFeet@empresa.com
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact_info_Icon">
+                                <img src="./img/loguitos/contact_info_3.png" alt="">
+                            </div>
+                            <div class="contact_info_Text">
+                                +34 999888777
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+                    <!--Preguntas frecuentes-->
+
+                <div class="pregFrecu">
+                    <div class="contact_title">Preguntas Frecuentes</div>
+                   
+                    <details open>
+                        <summary>¿Cuanto tardan los envios?</summary>
+                        <div class="faq__content">
+                          <p>Los envios a la Peninsula 1 o 2 dias y a Baleares o Canarias entre 3 y 4 dias</p>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>¿Cuanto tardan los envios?</summary>
+                        <div class="faq__content">
+                            <p>Los envios a la Peninsula 1 o 2 dias y a Baleares o Canarias entre 3 y 4 dias</p>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>¿Cuanto tardan los envios?</summary>
+                        <div class="faq__content">
+                            <p>Los envios a la Peninsula 1 o 2 dias y a Baleares o Canarias entre 3 y 4 dias</p>
+                        </div>
+                      </details>
+                   
+                
+                </div>
+        </div>
+
+        <!--Poner imagen de subscribirse para un 20% de descuento-->
      
     </main>
-
+    <footer>
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script> Todos los derechos reservados a Ismael.Amoros.Solano</p>
+    </footer>
 </body>
 </html>

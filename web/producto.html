@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>YRFeet</title>
+</head>
+<body>
+
+
+    <!--HEADERRR-->
+    <header>
+        <nav>
+        <a href="./index.html">Home</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./producto.html">Producto</a>
+        <a href="./quienes.html">Quienes Somos</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./login.html">Login</a>
+        </nav>
+
+
+   <!--Menu hamburguesa-->
+
+   <input type="checkbox" id="check"> <!-- este es el check que va a determinar si se muestra o no el menú desde el lateral, si está checkeado lo mostrará, si no, lo oculta CON LA PSEUDOCLASE :CHECKED ver css-->
+
+   <label for="check" class="menuMostrar-toggle">
+       &#8801
+   </label>
+   <nav class="menu">
+           <ul class="acordeon-vertical">
+                 <li id="opcion1"><a href="./index.html">Home</a></li>
+                <li id="opcion2"><a href="./productos.html">Productos</a></li>
+               <li id="opcion3"><a href="./producto.html">Producto</a></li>
+               <li id="opcion4"><a href="./quienes.html">Quienes Somos</a></li>
+               <li id="opcion5"><a href="./contacto.html">Contacto</a></li>
+               <li id="opcion6"><a href="./login.html">Login</a></li>
+
+           </ul>
+           <label for="check" class="menuOcultar-toggle">&#215</label>
+       
+       <!-- Al tener los dos labels el mismo for todos actuan sobre el input check -->
+
+
+    </header>
+    <main>
+
+<div class="productos">
+
+           <div class="container">
+
+            <div class="producto_Row">
+
+            
+                <!--Imagenes-->
+
+                <div class="producto_Img">
+                    <div class="producto_Imagen_Larga">
+                        <img src="img/product_12.jpg" alt="">
+                    </div>
+
+                    <div class="producto_Img_Pequenya">
+                        <div class="imagen_Pequenyas" id="img_1">
+                        </div>
+                        <div class="imagen_Pequenyas" id="img_2">
+                        </div>
+                        <div class="imagen_Pequenyas " id="img_3">
+                        </div>
+                    </div>
+                </div>
+
+                <!--TEXTO-->
+
+                <div class="text_Productos">
+                    <div class="producto_name_P">Conjunto Rojo Chillon</div>
+                    <div class="producto_price_P">45,99€</div>
+
+                    <div class="puntuacion_P">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>☆</i>
+                    </div>
+
+                    <div class="stock">
+                        <div class="img_Stock"><img src="./img/loguitos/checked.png" alt=""></div>
+                        <div class="en_Stock">En stock (4)uds.</div>
+                    </div>
+
+                    <div class="producto_Txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo. Etiam sed placerat felis. Proin non rutrum ligula.</p>
+                    </div>
+
+                    <div class="cantidad_P">
+                        <p class="Texto_Resaltado">Cantidad</p>
+                        <div class="contador_Cantidad">
+                            <input type="number" class="input_min" value="1">
+                        </div>
+                    </div>
+
+                    <div class="talla">
+                        <p class="Texto_Resaltado">Talla</p>
+                        <div class="talla_Box">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="talla_1" name ="talla_Selector" class="regular_radio talla_1">
+                                    <label for="talla_1">XS</label></li>
+                                <li>
+                                    <input type="radio" id="talla_2"  name ="talla_Selector" class="regular_radio talla_2">
+                                    <label for="talla_2">S</label></li>
+                                <li>
+                                    <input type="radio" id="talla_3"  name ="talla_Selector" class="regular_radio talla_3">
+                                    <label for="talla_3">M</label></li>
+                                <li>
+                                    <input type="radio" id="talla_4"  name ="talla_Selector" class="regular_radio talla_4">
+                                    <label for="talla_4">L</label></li>
+                                <li>
+                                    <input type="radio" id="talla_5"  name ="talla_Selector" class="regular_radio talla_5">
+                                    <label for="talla_5">XL</label></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br>
+                    <button type="submit" class="formulario_boton">Enviar</button>
+                </div>
+
+            </div>
+
+            <!--Reviews-->
+
+            <div class="producto_Row">
+                <div class="reviews">
+                    <div class="reviews_Title">
+                        Reviews
+                    </div>
+
+                    <div class="reviews_Container">
+                        <ul>
+                            <!-- Review -->
+                            <li class="review clearfix">
+                                <div class="review_Imagen"><img src="img/review.jpg" alt=""></div>
+                                <div class="review_Content">
+                                    <div class="review_Name"><a href="#">Ismael Amorós</a></div>
+                                    <div class="review_Fecha">Nov 29, 2017</div>
+                                    <div class="puntuacion_P">
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>☆</i>
+                                    </div>
+                                    <div class="review_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo. Etiam sed placerat felis. Proin non rutrum ligula. </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Review -->
+                            <li class="review clearfix">
+                                <div class="review_Imagen"><img src="img/review.jpg" alt=""></div>
+                                <div class="review_Content">
+                                    <div class="review_Name"><a href="#">Ismael Amorós</a></div>
+                                    <div class="review_Fecha">Nov 29, 2017</div>
+                                    <div class="puntuacion_P">
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>☆</i>
+                                    </div>
+                                    <div class="review_text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo. Etiam sed placerat felis. Proin non rutrum ligula. </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Deja Tu Review-->
+
+            <div class="formulario_Contacto">
+                <p>
+                 Deja tu review
+                </p> 
+ 
+                <div class="formulario_contenido_General">
+                 
+                 <form action="#" class="formulario_E">
+                     <div class="formulario_Contenido">
+                         <input type="text" class="formulario" placeholder="Nombre" required="required">
+                         <input type="email" class="formulario" placeholder="E-Mail" required="required">
+                         <input type="text" class="formulario" placeholder="Asunto">
+                     </div>
+                     <textarea class="formulario_text" name="review_form_text" placeholder="Mensaje"></textarea>
+                     <br>
+                     <button type="submit" class="formulario_boton">Enviar</button>
+                 
+                 </form>
+                </div>
+         </div>
+
+           </div>
+    
+</div>
+
+    </main>
+    <footer>
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script> Todos los derechos reservados a Ismael.Amoros.Solano</p>
+    </footer>
+</body>
+</html>

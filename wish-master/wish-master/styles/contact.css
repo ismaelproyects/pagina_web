@@ -963,15 +963,11 @@ section
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 400;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
 }
 .accordion div
 {
-	max-width: 90%;
+	
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -1035,7 +1031,7 @@ section
 }
 .accordion_panel p:last-child
 {
-	margin-bottom: 0;
+
 }
 
 /*********************************

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>YRFeet</title>
+</head>
+<body>
+
+
+    <!--HEADERRR-->
+    <header>
+        <nav>
+        <a href="./index.html">Home</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./producto.html">Producto</a>
+        <a href="./quienes.html">Quienes Somos</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./login.html">Login</a>
+        </nav>
+
+
+   <!--Menu hamburguesa-->
+
+   <input type="checkbox" id="check"> <!-- este es el check que va a determinar si se muestra o no el menú desde el lateral, si está checkeado lo mostrará, si no, lo oculta CON LA PSEUDOCLASE :CHECKED ver css-->
+
+   <label for="check" class="menuMostrar-toggle">
+       &#8801
+   </label>
+   <nav class="menu">
+           <ul class="acordeon-vertical">
+                 <li id="opcion1"><a href="./index.html">Home</a></li>
+                <li id="opcion2"><a href="./productos.html">Productos</a></li>
+               <li id="opcion3"><a href="./producto.html">Producto</a></li>
+               <li id="opcion4"><a href="./quienes.html">Carrito</a></li>
+               <li id="opcion5"><a href="./contacto.html">Contacto</a></li>
+               <li id="opcion6"><a href="./login.html">Login</a></li>
+
+
+           </ul>
+           <label for="check" class="menuOcultar-toggle">&#215</label>
+       
+       <!-- Al tener los dos labels el mismo for todos actuan sobre el input check -->
+
+
+    </header>
+    <main>
+
+        <div class="productos">
+
+            <div class="titulo_Entrada">
+                Productos
+            </div>
+
+            <div class="filtro_Productos clearfix">
+
+                <div class="sidebar_Section">
+                    <div class="sidebar_Titulo">
+                        Categorias
+                    </div>
+                    <div class="sidebar_Contenido">
+                        <ul>
+                            <li><a href="#">Camisetas</a></li>
+                            <li><a href="#">Sudaderas</a></li>
+                            <li><a href="#">Pantalones</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="sidebar_Section side1">
+                    <div class="sidebar_Titulo">
+                        Colores
+                    </div>
+                    <div class="sidebar_Contenido ">
+                        <ul>
+                            <li><a href="#"><span id="azul"></span>Azul</a></li>
+                            <li><a href="#"><span id="rojo"></span>Rojo</a></li>
+                            <li><a href="#"><span id="amarillo"></span>Amarillo</a></li>
+                            <li><a href="#"><span id="verde"></span>Verde</a></li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="sidebar_Section side2">
+                    <div class="sidebar_Titulo">
+                        Talla
+                    </div>
+                    <div class="sidebar_Contenido ">
+                        <ul>
+                            <li><a href="#">Pequeña (S)</a></li>
+                            <li><a href="#">Media (M)</a></li>
+                            <li><a href="#">Largo (L)</a></li>
+                            <li><a href="#">Extra Larga (XL)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar_Section side3">
+                    <div class="sidebar_Titulo">
+                        Precio
+                    </div>
+                    <div class="sidebar_Contenido ">
+                        <div class="filtrar_Precio">
+                            <input type="number" class="input_min" value="0">
+                            -
+                            <input type="number" class="input_max" value="500">    
+                        </div>
+                        <button type="submit" class="boton_Precio">Limpiar Precio</button>
+                    </div>
+                </div>
+   </div>
+   
+        <div class="productosPromoList">
+
+            <div class="producto">
+                <img src="img/tnf-slider.jpg" >
+                <div class="puntuacion">
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>☆</i>
+                </div>
+                
+                <div class="producto_content">
+                    <div class="producto_info">
+                        <div class="producto_name"><a href="product.html">Chaqueta bien chulona</a></div>
+                        <div class="producto_price">45.00 €</div>
+                    </div>
+                    <div class="product_options">
+                        <div class="producto_buy"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="producto">
+                <img src="img/tnf-slider.jpg">
+                <div class="puntuacion">
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>☆</i>
+                </div>
+                
+                <div class="producto_content">
+                    <div class="producto_info">
+                        <div class="producto_name"><a href="product.html">Chaqueta bien chulonas</a></div>
+                        <div class="producto_price">45.00 €</div>
+                    </div>
+                    <div class="product_options">
+                        <div class="producto_buy "><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="img/tnf-slider.jpg">
+                <div class="puntuacion">
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                </div>
+                
+                <div class="producto_content">
+                    <div class="producto_info">
+                        <div class="producto_name"><a href="product.html">Chaqueta bien chulona</a></div>
+                        <div class="producto_price">45.00 €</div>
+                    </div>
+                    <div class="product_options">
+                        <div class="producto_buy "><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+        <div class="productosPromoList">
+
+            <div class="producto">
+                <img src="img/tnf-slider.jpg" >
+                <div class="puntuacion">
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>☆</i>
+                </div>
+                
+                <div class="producto_content">
+                    <div class="producto_info">
+                        <div class="producto_name"><a href="product.html">Chaqueta bien chulona</a></div>
+                        <div class="producto_price">45.00 €</div>
+                    </div>
+                    <div class="product_options">
+                        <div class="producto_buy "><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="producto">
+                <img src="img/tnf-slider.jpg">
+                <div class="puntuacion">
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>☆</i>
+                </div>
+                
+                <div class="producto_content">
+                    <div class="producto_info">
+                        <div class="producto_name"><a href="product.html">Chaqueta bien chulonas</a></div>
+                        <div class="producto_price">45.00 €</div>
+                    </div>
+                    <div class="product_options">
+                        <div class="producto_buy"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="img/tnf-slider.jpg">
+                <div class="puntuacion">
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                    <i>★</i>
+                </div>
+                
+                <div class="producto_content">
+                    <div class="producto_info">
+                        <div class="producto_name"><a href="product.html">Chaqueta bien chulona</a></div>
+                        <div class="producto_price">45.00 €</div>
+                    </div>
+                    <div class="product_options">
+                        <div class="producto_buy"><img src="img/shopping-bag-white.svg" type="img/svg" alt=""></div>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+
+
+        
+    </div>
+    </main>
+    <footer>
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script> Todos los derechos reservados a Ismael.Amoros.Solano</p>
+    </footer>
+</body>
+</html>
