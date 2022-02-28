@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">    
-    <title>YRFeet</title>
+    <title>StreetWear</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
             <a href="./producto.html">Producto</a>
             <a href="./quienes.html">Quienes Somos</a>
             <a href="./contacto.html">Contacto</a>
-            <a href="./login.html">Login</a>
+            <a href="./login.html">Registro</a>
 
         </nav>
 
@@ -36,7 +36,7 @@
 					<li id="opcion3"><a href="./producto.html">Producto</a></li>
                     <li id="opcion4"><a href="./quienes.html">Quienes Somos</a></li>
 					<li id="opcion5"><a href="./contacto.html">Contacto</a></li>
-                    <li id="opcion6"><a href="./login.html">Login</a></li>
+                    <li id="opcion6"><a href="./login.html">Registro</a></li>
 
 
                 </ul>
@@ -54,17 +54,35 @@
           <div class="izquierda">
             <div class="login_Txt">Login</div>
             <div class="aviso">
-                Al registrarte aceptas tener en tu poder un T-Rex
+                Introduce tu usuario y contraseña y te mandaremos un correo con una contraseña por defecto.
             </div>
           </div>
           <div class="derecha">
         
             <div class="form">
+                <form action="#" id="form1">
               <label for="email">Email</label>
-              <input type="email" id="email">
+              <input type="email" id="email" required>
               <label for="password">Contraseña</label>
               <input type="password" id="password">
-              <input type="submit" id="submit" value="Submit">
+              <input type="submit" id="submit" value="Enviar">
+
+              <div id="login">
+                <a href="#">¿No tienes cuenta?</a>
+              </div>
+            </form>
+
+            <form action="#" id="form2">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password">
+                <input type="submit" id="submit" value="Enviar">
+  
+                <div id="login">
+                  <a href="#">¿No tienes cuenta?</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>

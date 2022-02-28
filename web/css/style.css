@@ -39,16 +39,13 @@ iframe{
 	height: 500px;
 }
 
-.mapa{
-	margin: 20px 20px 20px 20px;
 
-}
 
 .titulo_Entrada{
 	font-size: 44px;
 	margin-top: 90px;
 	text-align: center;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform:uppercase;
 }
 
 
@@ -102,7 +99,7 @@ nav a{
   text-decoration:none;
   color:#16151b;
   margin:0 15px;
-  font-size:30px;
+  font-size:20px;
   letter-spacing:1px;
   position:relative;
   display:inline-block;
@@ -798,7 +795,6 @@ summary {
 	
 	top: 120px;
     left: 10px;
-    width: 286px;
     padding-bottom: 98px;
 	float: left;
 }
@@ -877,6 +873,8 @@ summary {
 	float: left;
 	margin-right: 20px;
 	text-align: center;
+	color: black;
+	border: solid 1px black;
 }
 
 
@@ -885,6 +883,9 @@ summary {
 	margin-left: 20px;
 	text-align: center;
 	height: 30px;
+	color: black;
+	border: solid 1px black;
+
 }
 
 
@@ -1022,6 +1023,7 @@ summary {
 .talla{
 	margin-top: 50px;
 	display: flex;
+	align-items: center;
 }
 
 .talla_Box{
@@ -1033,7 +1035,7 @@ summary {
 }
 
 .regular_radio:checked + label{
-	background: #937c6f;
+	background: #000000;
     color: #FFFFFF;
 }
 
@@ -1498,6 +1500,21 @@ margin-left: 40px;
 	margin: 40px;
 	position: absolute;
   }
+
+  #login{
+	margin-top: 20px;
+	text-align: center;
+  }
+
+  
+
+  #form2{
+	  display: none;
+  }
+  #login a{
+	  color: white;
+  }
+
   label {
 	color:  #c2c2c5;
 	display: block;
@@ -1525,6 +1542,7 @@ margin-left: 40px;
 	color: #707075;
 	margin-top: 40px;
 	transition: color 300ms;
+	cursor: pointer;
   }
   #submit:focus {
 	color: #f2f2f2;
